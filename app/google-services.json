@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "948402547851",
+    "project_id": "communityeventsapp-1acde",
+    "storage_bucket": "communityeventsapp-1acde.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948402547851:android:c1579915c69f48a4b7788e",
+        "android_client_info": {
+          "package_name": "com.tuempresa.communityeventsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948402547851-3uvvcbatha0gi7v0fsrh1teo7r593ejk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tuempresa.communityeventsapp",
+            "certificate_hash": "4c235121b8df164e4653acbfa5fdd5d1ccc24c52"
+          }
+        },
+        {
+          "client_id": "948402547851-iglcu2mndiqd8367dvglltjtv4r05uk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC71t1Gtx6E1UDMy6t4Ku_ehQ7oQDfQcBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948402547851-iglcu2mndiqd8367dvglltjtv4r05uk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
