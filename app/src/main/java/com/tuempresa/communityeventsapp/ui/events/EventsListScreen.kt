@@ -17,8 +17,8 @@ import com.tuempresa.communityeventsapp.data.model.Event
 @Composable
 fun EventsListScreen(
     viewModel: EventsViewModel,
-    onOpen: (String) -> Unit,   // <- abrir detalle
-    onCreate: () -> Unit,       // <- crear nuevo
+    onOpen: (String) -> Unit,
+    onCreate: () -> Unit,
     onLogout: () -> Unit
 ) {
     val state by viewModel.state.collectAsState()
@@ -103,6 +103,19 @@ fun EventsListScreen(
                                 EventCard(e) { e.id?.let(onOpen) }
                             }
                         }
+
+                        item { Spacer(Modifier.height(32.dp)) }
+
+                        item {
+                            Text(
+                                text = "Licencia: Creative Commons BY-NC-SA 4.0\nCommunityEventsApp – 2025",
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                                modifier = Modifier.padding(vertical = 8.dp)
+                            )
+                        }
+
+
                     }
                 }
             }
