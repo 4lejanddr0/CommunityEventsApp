@@ -73,8 +73,10 @@ class EventsViewModel @Inject constructor(
                 startTime = start,
                 endTime = end,
                 isPublic = isPublic,
-                tags = tags
+                tags = tags,
+                lastUpdated = Timestamp.now()
             )
+
             repo.upsert(ev)
             load()      // refresca listas
             onDone()
@@ -96,4 +98,18 @@ class EventsViewModel @Inject constructor(
             onError(t)
         }
     }
+
+    // ---------------  FUNCIONES DE NOTIFICACIÓN --------------------
+
+    fun checkUpcomingNotification(event: Event): Boolean {
+        val now = System.currentTimeMillis()
+        val eventTime = event.startTime.toDate().time
+
+        val diff = eventTime - now
+        val hours = diff / (1000 * 60 * 60)
+
+        return hours in 1..24   // entre 1 y 24 horas
+    }
+
+
 }

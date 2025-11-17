@@ -9,6 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.google.firebase.Timestamp
+import com.tuempresa.communityeventsapp.ui.components.NotificationBanner
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -74,13 +76,50 @@ fun EventDetailScreen(
 
                 else -> {
                     state.event?.let { e ->
+                        //  Cálculo para mostrar recordatorio (evento en menos de 24h)
+                        val showReminder by remember(e.startTime) {
+                            mutableStateOf(
+                                run {
+                                    val now = System.currentTimeMillis()
+                                    val eventTime = e.startTime.toDate().time
+                                    val diff = eventTime - now
+                                    val hours = diff / (1000 * 60 * 60)
+                                    hours in 1..24
+                                }
+                            )
+                        }
+
+                        // Evento actualizado recientemente
+                        val showUpdatedNotice by remember(e.lastUpdated) {
+                            mutableStateOf(
+                                run {
+                                    val now = System.currentTimeMillis()
+                                    val updatedTime = e.lastUpdated.toDate().time
+                                    val diff = now - updatedTime
+                                    val hours = diff / (1000 * 60 * 60)
+                                    hours in 0..24
+                                }
+                            )
+                        }
+
                         Column(
                             Modifier
                                 .fillMaxWidth()
-                                .verticalScroll(scrollState)   // 👈 AHORA SÍ HAY SCROLL
+                                .verticalScroll(scrollState)
                                 .padding(16.dp),
                             verticalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
+
+                            if (showReminder) {
+                                NotificationBanner("Recordatorio: este evento es dentro de las próximas 24 horas.")
+                            }
+
+                            if (showUpdatedNotice && state.attending) {
+                                NotificationBanner(
+                                    "Este evento fue actualizado recientemente. Revisa la fecha, hora o lugar por posibles cambios."
+                                )
+                            }
+
                             Text(e.title, style = MaterialTheme.typography.headlineSmall)
                             Text(e.location, style = MaterialTheme.typography.bodyMedium)
                             Text(

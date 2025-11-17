@@ -10,6 +10,7 @@ data class Event(
     val location: String = "",
     val startTime: Timestamp = Timestamp.now(),
     val endTime: Timestamp = Timestamp.now(),
+    val lastUpdated: Timestamp = Timestamp.now(),
 
     @get:PropertyName("public")
     @set:PropertyName("public")
