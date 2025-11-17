@@ -10,6 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.google.firebase.Timestamp
 import com.tuempresa.communityeventsapp.ui.components.NotificationBanner
+import androidx.compose.ui.platform.LocalContext
+import android.content.Intent
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Share
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -21,6 +25,7 @@ fun EventDetailScreen(
     onEdit: (String) -> Unit
 ) {
     val state by vm.state.collectAsState()
+    val context = LocalContext.current
 
     // cargar datos del evento
     LaunchedEffect(eventId) { vm.load(eventId) }
@@ -165,6 +170,37 @@ fun EventDetailScreen(
                                 modifier = Modifier.align(Alignment.Start)
                             ) {
                                 Text(if (state.attending) "Ya no asistiré" else "Asistiré")
+                            }
+
+                            Spacer(Modifier.height(8.dp))
+
+                            OutlinedButton(
+                                onClick = {
+                                    val textToShare = """
+            Evento: ${e.title}
+            Lugar: ${e.location}
+            Fecha: ${fmt(e.startTime)}
+            
+            Compartido desde la app Community Events.
+        """.trimIndent()
+
+                                    val sendIntent = Intent().apply {
+                                        action = Intent.ACTION_SEND
+                                        putExtra(Intent.EXTRA_TEXT, textToShare)
+                                        type = "text/plain"
+                                    }
+
+                                    val shareIntent = Intent.createChooser(sendIntent, "Compartir evento")
+                                    context.startActivity(shareIntent)
+                                },
+                                modifier = Modifier.align(Alignment.Start)
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Share,
+                                    contentDescription = "Compartir"
+                                )
+                                Spacer(Modifier.width(8.dp))
+                                Text("Compartir evento")
                             }
 
                             Divider(Modifier.padding(vertical = 12.dp))
