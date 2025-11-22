@@ -38,9 +38,9 @@ Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la a
 ## 👨‍👩‍👦‍👦 Integrantes del equipo
 > *(Modifica o agrega según tu grupo, te dejo formato PRO)*
 
-| Nombre | Rol | Contacto |
+| Nombre | Carnet | Contacto |
 |--------|------|-----------|
-| Jesús Alejandro Campos Landaverde | CL212345
+| Jesús Alejandro Campos Landaverde | CL212345 | 
 | Miembro 2 | Documentación / QA | correo@udb.edu.sv |
 | Miembro 3 | Diseño UI / Pruebas | correo@udb.edu.sv |
 | Miembro 4 | Apoyo en análisis | correo@udb.edu.sv |
