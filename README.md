@@ -36,7 +36,6 @@ Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la a
 ---
 
 ## 👨‍👩‍👦‍👦 Integrantes del equipo
-> *(Modifica o agrega según tu grupo, te dejo formato PRO)*
 
 | Nombre | Carnet | Contacto |
 |--------|------|-----------|
@@ -121,6 +120,7 @@ app/src/main/res/values/strings.xml
 Clonar el repositorio:
 
 git clone https://github.com/4lejanddr0/CommunityEventsApp.git
+
 ---
 
 ## 📄 Licencia
@@ -145,5 +145,5 @@ Esta licencia permite copiar y adaptar el contenido siempre que:
 
 ## ▶️ Ejecución del proyecto
 
-
+---
 
