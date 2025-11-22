@@ -117,8 +117,8 @@ Agregar SHA-1 y SHA-256 en Firebase.
 ### 5️⃣ Verificar `default_web_client_id` en:
 app/src/main/res/values/strings.xml
 
+## ▶️ Ejecución del proyecto
 Clonar el repositorio:
-
 git clone https://github.com/4lejanddr0/CommunityEventsApp.git
 
 ---
@@ -141,9 +141,6 @@ Esta licencia permite copiar y adaptar el contenido siempre que:
 
 **Más información:**  
 🔗 https://creativecommons.org/licenses/by-nc/4.0/
-
-
-## ▶️ Ejecución del proyecto
 
 ---
 
