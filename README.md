@@ -31,7 +31,7 @@ Gestión del cronograma, estructura de tareas y control de avances del proyecto:
 
 ### 🎨 Prototipo de Figma
 Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la aplicación:
-👉 **https://LINK-DE-FIGMA-AQUI**
+👉 https://www.figma.com/design/XK2h5A90GdSzEBSkUnUVnP/Community-Events?node-id=0-1&p=f&t=UpUv2IzFqmHCIF1T-0
 
 ---
 
