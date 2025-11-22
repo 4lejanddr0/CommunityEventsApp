@@ -27,7 +27,7 @@ Desarrollada completamente en **Kotlin + Jetpack Compose**, con arquitectura **M
 
 ### 📋 Tablero de Trello
 Gestión del cronograma, estructura de tareas y control de avances del proyecto:
-👉 **https://LINK-DE-TRELLO-AQUI**
+👉 https://trello.com/b/knmhUNWk/communityevents
 
 ### 🎨 Prototipo de Figma
 Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la aplicación:
@@ -40,7 +40,7 @@ Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la a
 
 | Nombre | Rol | Contacto |
 |--------|------|-----------|
-| Jesús Alejandro Campos Landaverde | Desarrollador principal / Arquitectura / Firebase | jesus.campos@udb.edu.sv |
+| Jesús Alejandro Campos Landaverde | CL212345
 | Miembro 2 | Documentación / QA | correo@udb.edu.sv |
 | Miembro 3 | Diseño UI / Pruebas | correo@udb.edu.sv |
 | Miembro 4 | Apoyo en análisis | correo@udb.edu.sv |
@@ -118,14 +118,10 @@ Agregar SHA-1 y SHA-256 en Firebase.
 ### 5️⃣ Verificar `default_web_client_id` en:
 app/src/main/res/values/strings.xml
 
----
-
-## ▶️ Ejecución del proyecto
-
 Clonar el repositorio:
 
-```bash
 git clone https://github.com/4lejanddr0/CommunityEventsApp.git
+---
 
 ## 📄 Licencia
 
@@ -140,11 +136,14 @@ Los documentos, imágenes, textos explicativos y contenido académico del proyec
 
 Esta licencia permite copiar y adaptar el contenido siempre que:
 
-- Se brinde crédito al autor original (BY)  
+- Se brinde crédito al autor original (BY)
 - No se utilice con fines comerciales (NC)
 
 **Más información:**  
-🔗 https://creativecommons.org/licenses/by-nc/4.0/  
+🔗 https://creativecommons.org/licenses/by-nc/4.0/
+
+
+## ▶️ Ejecución del proyecto
 
 
 
