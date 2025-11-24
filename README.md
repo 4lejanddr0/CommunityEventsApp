@@ -39,10 +39,10 @@ Diseño visual, estructura de pantallas y flujo de usuario del prototipo de la a
 
 | Nombre | Carnet | Contacto |
 |--------|------|-----------|
-| Jesús Alejandro Campos Landaverde | CL212345 | 
-| Miembro 2 | Documentación / QA | correo@udb.edu.sv |
-| Miembro 3 | Diseño UI / Pruebas | correo@udb.edu.sv |
-| Miembro 4 | Apoyo en análisis | correo@udb.edu.sv |
+| Jesús Alejandro Campos Landaverde | CL202345 | correo@udb.edu.sv |
+| Devin Ivan Mendoza Ortiz | MO190319| correo@udb.edu.sv |
+| Consuelo Astrid Landa Hernández | LH201536 | correo@udb.edu.sv |
+| Arturo José Gómez Henríquez | GH191748 | correo@udb.edu.sv |
 
 ---
 
